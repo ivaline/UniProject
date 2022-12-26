@@ -5,5 +5,5 @@
  * @author alina
  *
  */
-module UniversityProject {
+module UniProject {
 }
