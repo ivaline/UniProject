@@ -1,6 +1,7 @@
 package calendar;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.GregorianCalendar;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 
@@ -18,6 +19,13 @@ public class Dates {
 		this.day = day;
 	}
 
+	public GregorianCalendar fromDatesToGC() {
+		GregorianCalendar dateOfTask = new GregorianCalendar();
+		dateOfTask.set(Calendar.DAY_OF_MONTH, this.day);
+		dateOfTask.set(Calendar.MONTH, this.month);
+		dateOfTask.set(Calendar.YEAR, this.year);
+		return dateOfTask;
+	}
 
 	public int getDay() {
 		return day;
