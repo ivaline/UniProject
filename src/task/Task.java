@@ -18,9 +18,47 @@ public class Task {
 	
 	
 	public Task(String toDo, Time timeStart, Time timeEnd, Dates dateOfTask) {
-		
 		this.toDo = toDo;
+		this.timeStart = timeStart;
+		this.timeEnd = timeEnd;
+		this.dateOfTask = dateOfTask;
 		
 	}
+
+
+
+	public Dates getDateOfTask() {
+		return dateOfTask;
+	}
+
+
+
+	public void setDateOfTask(Dates dateOfTask) {
+		this.dateOfTask = dateOfTask;
+	}
+
+
+
+	public Time getTimeStart() {
+		return timeStart;
+	}
+
+
+	public Time getTimeEnd() {
+		return timeEnd;
+	}
+
+
+
+	public String getToDo() {
+		return toDo;
+	}
+
+
+
+	public void setToDo(String toDo) {
+		this.toDo = toDo;
+	}
+	
 	
 }

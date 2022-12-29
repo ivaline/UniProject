@@ -11,20 +11,17 @@ public class Dates {
 	private int day;
 	private int month;
 	private int year;
+	public GregorianCalendar dateOfTask;
 	
-	
+
 	public Dates(int year, int month, int day) {
 		this.year = year;
 		this.month = month;
 		this.day = day;
 	}
-
-	public GregorianCalendar fromDatesToGC() {
-		GregorianCalendar dateOfTask = new GregorianCalendar();
-		dateOfTask.set(Calendar.DAY_OF_MONTH, this.day);
-		dateOfTask.set(Calendar.MONTH, this.month);
-		dateOfTask.set(Calendar.YEAR, this.year);
-		return dateOfTask;
+	
+	public String showDate() {
+		return (getDay() + "." + getMonth() + "." + getYear());
 	}
 
 	public int getDay() {

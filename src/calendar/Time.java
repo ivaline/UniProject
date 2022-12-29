@@ -8,8 +8,9 @@ public class Time {
 	private int min;
 	
 	
-	public Time(GregorianCalendar timing) {
-		this.timing = timing;
+	public Time(int hour,int min) {
+		this.hour = hour;
+		this.min = min;
 	}
 	
 	

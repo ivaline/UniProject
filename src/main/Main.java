@@ -1,7 +1,9 @@
 package main;
-import java.time.LocalDate;
-import java.time.LocalTime;
-import java.util.Date;
+import javax.swing.JFrame;
+import javax.swing.JTable;
+import javax.swing.table.AbstractTableModel;
+
+import calendar.Dates;
 
 
 public class Main {
@@ -14,11 +16,12 @@ public class Main {
 	      frame.setSize(400,400);
 	      frame.setLocationRelativeTo(null);  
 	      frame.setVisible(true);
-	   }
+	}
+	
 	}
 	 
 	class MyTableModel extends AbstractTableModel {
-	   String[] columnNames = {"Name", "Age", "Location"};
+	   String[] columnNames = {"Da", "Age", "Location"};
 	 
 	      Object[][] data = {
 	       {"Ken", new Integer(25), "Nairobi"},
